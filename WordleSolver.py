@@ -45,7 +45,7 @@ class LexiconLoader:
 
     def loadWords(self, filename, verbose=False):
         words = []
-        with open(filename, 'r') as f:
+        with open(filename, 'r', encoding='utf-8') as f:
             words = f.read().splitlines()
 
         if verbose:
